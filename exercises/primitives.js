@@ -8,10 +8,11 @@
  */
 
 // Your code :
-const str = "chaine";
-const num = 1;
-const boul = true;
-const und = ;
+const str = "1337";
+const num = 42;
+const bool = false;
+const undef = 3 * "chaine";
+console.log(str, num, boul, undef)
 
 //* Begin of tests
 const assert = require('assert')
