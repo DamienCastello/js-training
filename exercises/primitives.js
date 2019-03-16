@@ -8,7 +8,10 @@
  */
 
 // Your code :
-
+const str = "chaine";
+const num = 1;
+const boul = true;
+const und = ;
 
 //* Begin of tests
 const assert = require('assert')
