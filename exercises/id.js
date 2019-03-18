@@ -7,7 +7,7 @@
  */
 
 // Your code :
-
+function id(anArg){return anArg}
 //* Begin of tests
 const assert = require('assert')
 

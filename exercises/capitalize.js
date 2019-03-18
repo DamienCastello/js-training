@@ -7,7 +7,16 @@
  *
  */
 
-
+function capitalize(aString){
+    for (let i=0;i<aString.length;i++){
+        if (i===0){
+            aString[i].toUpperCase();
+        }
+        if (i>0){
+            aString[i]toLowerCase();
+        }
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

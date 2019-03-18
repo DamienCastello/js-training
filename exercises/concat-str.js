@@ -7,7 +7,11 @@
  */
 
 // Your code :
-
+function concatStr(a, b){
+    return a + b;
+}
+concatStr('a', 'b');
+concatStr('yolo', 'swag');
 //* Begin of tests
 const assert = require('assert')
 
