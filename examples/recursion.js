@@ -11,14 +11,16 @@
 
 // The most common while loop is a simple counter
 
-const countTo10 = count => {
+const countTo10 = (count) => {
+  
   if (count < 10) {
     console.log('counter at', count)
+    
     countTo10(count + 1) // call itself with the updated value of count
   }
 }
 
-countTo10(0) // we need to call it to start the recursion with an initial value
+countTo10(0, 0) // we need to call it to start the recursion with an initial value
 
 // As you can see, looping this way we were able to remove the need for mutable
 // variables (let)
