@@ -8,15 +8,29 @@
  */
 
 function capitalize(aString){
-    for (let i=0;i<aString.length;i++){
-        if (i===0){
-            aString[i].toUpperCase();
+        let sexyArray=[];
+        let array=aString.split(' ');
+     
+        let i=0;
+        for (i=0;i<1;i++){
+            let wordToChange=array[0];
+            const wordCapitalized =  wordToChange.charAt(0).toUpperCase() + wordToChange.slice(1).toLowerCase();
+            sexyArray.push(wordCapitalized);
         }
-        if (i>0){
-            aString[i]toLowerCase();
+        for (i=1;i<array.length;i++){
+            let wordToChange=array[i];
+            const wordCapitalized = wordToChange.slice(0).toLowerCase();
+            sexyArray.push(wordCapitalized);
+            
         }
+        let finalString="";
+        let k=0;
+        for (k=0;k<sexyArray.length;k++){
+            finalString=sexyArray.join(' ');
+        }
+        console.log(sexyArray);
+        return finalString;
     }
-}
 //* Begin of tests
 const assert = require('assert')
 

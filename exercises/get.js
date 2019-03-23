@@ -16,8 +16,8 @@ const sourceObject = {
 }
 
 // Your code :
-function readObject(objectToRead){
-  return Object.values(objectToRead);
+function get(key){
+  return sourceObject[key];
 }
 //* Begin of tests
 const assert = require('assert')

@@ -10,7 +10,15 @@
  */
 
 // Your code :
-
+function max(number, anotherNumber){
+    if (number<anotherNumber){
+        return anotherNumber;
+    } else if (number>anotherNumber){
+        return number;
+    } else {
+        return number;
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

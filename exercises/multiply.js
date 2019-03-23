@@ -9,7 +9,46 @@
  */
 
 // Your code :
-
+function multiply(arg1,arg2){
+    let i=0;
+    let result=0;
+    if ((arg1===0) || (arg2===0)){
+        return 0;
+    }
+    if ((arg1>0) && (arg2>0)){
+        while (i<arg2){
+        
+            result = result+arg1;
+            i++;
+        }
+        return result;
+    }
+    if ((arg1<0) && (arg2<0)){
+        while (i>arg1){
+        
+            result = result-arg2;
+            i--;
+        }
+        return result;
+    }
+    if ((arg1<0) && (arg2>0)){
+        while (i<arg2){
+        
+            result = result+arg1;
+            i++;
+        }
+        return result;
+    }
+    if ((arg1>0) && (arg2<0)){
+        while (i<arg1){
+        
+            result = result+arg2;
+            i++;
+        }
+        return result;
+    }
+    
+}
 //* Begin of tests
 const assert = require('assert')
 

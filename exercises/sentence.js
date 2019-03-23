@@ -5,7 +5,11 @@
  * and return a string of all the element separated by a space
  *
  */
-
+function sentence(array){
+    let sexyString=array.slice(0, array.length).join(' ');
+    console.log(sexyString);
+    return sexyString;
+}
 
 //* Begin of tests
 const assert = require('assert')

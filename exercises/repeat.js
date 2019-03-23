@@ -7,7 +7,21 @@
  * Of course you may not use the method directly
  *
  */
-
+function repeat(aString, aNumber){
+    let finalString=[];
+    if (aNumber===0){
+        finalString.push('');
+        return finalString.join('');
+    } else if (aNumber===1){
+        finalString.push(aString);
+        return finalString.join('')
+    } else if (aNumber>1){
+        for (let i=0;i<aNumber;i++){
+            finalString.push(aString);
+        }
+        return finalString.join('');
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
